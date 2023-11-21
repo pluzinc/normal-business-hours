@@ -1,3 +1,4 @@
 # Normal Business Hours
 Not sure why my background disappeared in my local host...
-<img src="https://github.com/pluzinc/06-assignment/assets/132268195/bac5ffb0-d659-4400-a312-dee7dcf90863" height="600"/>
+<img src="https://github.com/pluzinc/normal-business-hours/assets/132268195/5b22c681-3c4c-41cf-bb1b-124ac784c8c9" />
+
