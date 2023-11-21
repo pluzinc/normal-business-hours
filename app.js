@@ -14,35 +14,53 @@ app.listen(port, () => {
 
 // our custom middleware function
 function workingHours(req, res, next) {
-
-  // get the current time
-  const currentTime = new Date();
-  // get the hour
-  const currentHour = currentTime.getHours();
-
-  const normalBusinessHours = {
-    // 24 hour time
-    open: 10: 30,
-    close: 18: 30,
-  };
-
   // check if within normal business hours
-  if (
-    currentHour >= normalBusinessHours.open &&
-    currentHour <= normalBusinessHours.close
-  ) {
-
+  if (isWorkingHours()) {
     // if so, point the request to our static files
-    console.log('Open!');
+    console.log('Open');
     req.url = 'Resume Samples.pdf';
     next();
-
   } else {
-
     // otherwise, return the denial
     console.log('Closed 🔒');
     req.url = 'denied.html';
     next();
-
   }
+}
+
+function isWorkingHours() {
+  const normalBusinessHours = {
+    openHour: 10, // 10 AM
+    closeHour: 18, // 6 PM
+    openDay: 1, // Monday
+    closeDay: 4 // Thursday
+  };
+
+  const currentDateTime = new Date();
+  const currentHour = currentDateTime.getHours()
+  const currentDayOfWeek = currentDateTime.getDay();
+
+  return currentHour >= normalBusinessHours.openHour
+    && currentHour < normalBusinessHours.closeHour
+    && currentDayOfWeek >= normalBusinessHours.openDay
+    && currentDayOfWeek <= normalBusinessHours.closeDay
+    && !isHoliday(currentDateTime);
+}
+
+function isHoliday(currentDateTime) {
+  const currentMonth = currentDateTime.getMonth();
+  const currentDayOfMonth = currentDateTime.getDate();
+  // Halloween
+  if (currentMonth === 9 && currentDayOfMonth === 31) {
+    return true;
+  }
+  // Christmas Day
+  if (currentMonth === 12 && currentDayOfMonth === 25) {
+    return true;
+  }
+  // New Year's Eve
+  if (currentMonth === 12 && currentDayOfMonth === 31) {
+    return true;
+  }
+  return false;
 }
