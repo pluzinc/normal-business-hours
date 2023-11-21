@@ -6,4 +6,5 @@ I think I am more of a person to take on a job in a field I am passionate about 
 ## Documentation: 
 Not sure why my background disappeared in my local host...
 <img src="https://github.com/pluzinc/normal-business-hours/assets/132268195/5b22c681-3c4c-41cf-bb1b-124ac784c8c9" />
-
+I didn't get errors?
+![Screenshot ](https://github.com/pluzinc/normal-business-hours/assets/132268195/4fb51483-fe21-4b9e-8a1c-0cdebe599474)
