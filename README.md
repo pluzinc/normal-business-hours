@@ -9,7 +9,6 @@ Not sure why my background disappeared in my local host...
 I didn't get errors?
 ![Screenshot ](https://github.com/pluzinc/normal-business-hours/assets/132268195/4fb51483-fe21-4b9e-8a1c-0cdebe599474)
 Resume will be served when it's business hour.
-![Screenshot resume](https://github.com/pluzinc/normal-business-hours/assets/132268195/28d52cbd-be6d-4313-9f64-2bb8d9606e73)
-
+<img width="1624" alt="Screenshot resume" src="https://github.com/pluzinc/normal-business-hours/assets/132268195/03009df5-5fed-4e68-a8d0-bc582acb9eba">
 I have some trouble with nodemon in digital ocean's terminal.
 <img width="811" alt="nodemon error" src="https://github.com/pluzinc/normal-business-hours/assets/132268195/9b480c04-0f82-4fd9-8596-3ae634fe9533">
