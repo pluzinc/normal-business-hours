@@ -1,6 +1,3 @@
 # Normal Business Hours
-*Part of an assignment for the ReCode class at NYU's IMA program, Fall 2023.*
-
-Starter code for a website that serves your resume only during your normal business hours. Otherwise, it returns a simple message explaining when potential employers can return to find the information they seek.
-
-[INSTRUCTIONS ARE HERE](https://billythemusical.github.io/recode-fa23/modules/07-servers/normal-business-hours.html)
+Not sure why my background disappeared in my local host...
+<img src="https://github.com/pluzinc/06-assignment/assets/132268195/bac5ffb0-d659-4400-a312-dee7dcf90863" height="600"/>

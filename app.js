@@ -6,6 +6,8 @@ const port = 3000;
 // check the hour first!
 app.use(workingHours);
 // serving our static files like always
+const multer = require('multer')
+const upload = multer({ dest: 'public/' })
 app.use(express.static('public'));
 
 app.listen(port, () => {
